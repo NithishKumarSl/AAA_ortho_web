@@ -1,0 +1,130 @@
+/**
+ * AAA Ortho Clinic - Responsive Stylesheet
+ * All media queries and responsive breakpoints
+ */
+
+/* ============================================================
+   MOBILE HEADER
+   ============================================================ */
+@media (max-width:767px){
+  .header-cta .btn-primary{display:none !important}
+  .header-cta{justify-content:flex-end}
+  .main-nav{display:none}
+  .hamburger{display:inline-flex}
+}
+
+/* ============================================================
+   DESKTOP HERO ADJUSTMENTS
+   ============================================================ */
+@media (min-width:768px){
+  .hero{flex-direction:row;justify-content:space-between;align-items:center;padding:110px 5% 140px;gap:90px;text-align:left}
+  .hero-content{max-width:520px}
+  .image-wrapper{width:50%;max-width:620px;height:auto;border-radius:24px;overflow:hidden;position:relative}
+  .hero-title{font-size:52px;margin:20px 0 26px;line-height:1.14}
+  .hero-desc{margin-bottom:42px}
+  .hero-cta{flex-direction:row;justify-content:flex-start;gap:30px;margin-bottom:48px}
+  .btn{padding:17px 38px;width:auto}
+  .info-box{flex-direction:row;gap:60px;padding:30px 40px;margin:0}
+  .divider{width:1px;height:74px;margin:0}
+  .doctor-card{left:38px;bottom:38px;transform:none;padding:18px 30px;gap:24px;box-shadow:var(--sh-3)}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  .num{display:none}
+  .num.desktop{display:block}
+  .doc-info .name{font-size:19px}
+  .doc-info .qual{font-size:15px}
+}
+
+/* ============================================================
+   ABOUT SECTION RESPONSIVE
+   ============================================================ */
+@media (max-width:1024px){
+  .about-images{grid-template-columns:repeat(3,1fr)}
+}
+
+@media(max-width:768px){
+  .about-images{grid-template-columns:repeat(2,1fr);gap:14px}
+  .about-images img{height:190px}
+  .about-title{font-size:32px}
+}
+
+/* ============================================================
+   TREATMENTS RESPONSIVE
+   ============================================================ */
+@media (max-width:767px){
+  .treatments-grid{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   TESTIMONIALS RESPONSIVE
+   ============================================================ */
+@media (max-width:600px){
+  .section-title{font-size:28px}
+  .testimonial-row{gap:20px}
+  .testimonial-card{min-width:260px;max-width:280px;padding:22px 20px}
+}
+
+/* ============================================================
+   WHY CHOOSE US RESPONSIVE
+   ============================================================ */
+@media (max-width:767px){
+  .why-grid{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   FAQ RESPONSIVE
+   ============================================================ */
+@media (max-width:767px){
+  .faq-grid{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   FOOTER RESPONSIVE
+   ============================================================ */
+@media (max-width:767px){
+  .footer-grid{grid-template-columns:1fr;gap:24px}
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS SYSTEM
+   ============================================================ */
+
+/* Large Desktop 1440+ */
+@media (min-width:1440px){
+  :root{--max-w:1400px}
+}
+
+/* Desktop 1024 - 1439 */
+@media (min-width:1024px) and (max-width:1439px){
+  .hero-title{font-size:40px}
+}
+
+/* Tablet 768 - 1023 */
+@media (min-width:768px) and (max-width:1023px){
+  .container{padding:20px}
+  .why-grid{grid-template-columns:1fr;gap:22px}
+  .hero{padding:80px 24px}
+  .treatments-grid{grid-template-columns:1fr;gap:22px}
+}
+
+/* Mobile 480 - 767 */
+@media (min-width:480px) and (max-width:767px){
+  .container{padding:16px}
+  .hero-title{font-size:26px}
+  .hero-desc{font-size:15px}
+  .hero{min-height:420px}
+  .about-images{grid-template-columns:repeat(2,1fr)}
+  .treatments-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+}
+
+/* Small mobile < 480 */
+@media (max-width:479px){
+  .container{padding:12px}
+  .brand-text{font-size:16px}
+  .brand-icon{width:30px;height:30px}
+  .main-nav{display:none}
+  .hamburger{display:inline-flex}
+  .hero-title{font-size:20px}
+  .testimonial-row{flex-direction:column;gap:12px}
+}
+

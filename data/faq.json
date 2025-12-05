@@ -1,0 +1,35 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "When should I visit an orthopedic doctor for pain?",
+      "answer": "If pain persists more than a week or limits daily activities, book a consultation for diagnosis."
+    },
+    {
+      "id": 2,
+      "question": "Can long-term knee pain be cured?",
+      "answer": "Many knee problems respond well to targeted treatment and physiotherapy; some degenerative conditions are managed to reduce symptoms."
+    },
+    {
+      "id": 3,
+      "question": "Is back pain due to posture treatable?",
+      "answer": "Yes — posture-related pain often improves with exercise, postural training and targeted care."
+    },
+    {
+      "id": 4,
+      "question": "Do you treat senior citizens & arthritis patients?",
+      "answer": "Yes. We offer tailored treatment plans for older patients focused on safety and function."
+    },
+    {
+      "id": 5,
+      "question": "Can I avoid surgery with early treatment?",
+      "answer": "Many conditions can be treated conservatively if identified early; surgery is recommended only when necessary."
+    },
+    {
+      "id": 6,
+      "question": "Do you offer emergency fracture treatment?",
+      "answer": "We provide initial fracture care and immobilization; complex cases are referred to specialist centres when required."
+    }
+  ]
+}
+

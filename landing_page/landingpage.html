@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="AAA Ortho Clinic - Expert bone & joint pain treatment in Pattukkottai. Trusted orthopaedic care for families." />
+  <title>AAA Ortho Clinic — Expert Bone & Joint Pain Treatment | Pattukkottai</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Header Component -->
+  <div id="header-container"></div>
+
+  <main id="top">
+    <!-- Hero Section Component -->
+    <div id="hero-container"></div>
+
+    <!-- About Section Component -->
+    <div id="about-container"></div>
+
+    <!-- Treatments Section Component -->
+    <div id="treatments-container"></div>
+
+    <!-- Testimonials Section Component -->
+    <div id="testimonials-container"></div>
+
+    <!-- Why Choose Us Section Component -->
+    <div id="why-us-container"></div>
+
+    <!-- FAQ Section Component -->
+    <div id="faq-container"></div>
+  </main>
+
+  <!-- Footer Component -->
+  <div id="footer-container"></div>
+
+  <!-- Component Loader (must load first) -->
+  <script src="js/component-loader.js"></script>
+  
+  <!-- Main Scripts (load after components) -->
+  <script>
+    // Wait for components to load before initializing main scripts
+    document.addEventListener('componentsLoaded', function() {
+      // Load main scripts after components are loaded
+      const script1 = document.createElement('script');
+      script1.src = 'js/script.js';
+      document.body.appendChild(script1);
+
+      const script2 = document.createElement('script');
+      script2.src = 'js/faq.js';
+      document.body.appendChild(script2);
+    });
+  </script>
+</body>
+</html>

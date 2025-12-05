@@ -1,0 +1,29 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "text": "Knee pain reduced in 2 visits doctor explained everything clearly.",
+      "author": "Patient 1",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "text": "Back pain improved quickly, thanks to the clear guidance.",
+      "author": "Patient 2",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "text": "Doctor explained every detail, very professional.",
+      "author": "Patient 3",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "text": "Friendly staff and comfortable environment.",
+      "author": "Patient 4",
+      "rating": 5
+    }
+  ]
+}
+

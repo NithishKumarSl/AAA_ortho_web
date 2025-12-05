@@ -1,3 +1,7 @@
+/**
+ * AAA Ortho Clinic - Main Stylesheet
+ * Base styles, components, and layout
+ */
 
 :root{
   /* Colors */
@@ -80,6 +84,7 @@ img{
 .shadow-md{box-shadow:var(--sh-2)}
 .text-muted{color:var(--clr-text-muted)}
 .small{font-size:13px}
+.muted{color:var(--clr-text-muted)}
 
 /* ============================================================
    HEADER / NAV
@@ -106,14 +111,6 @@ img{
 
 .hamburger{display:none;border:0;padding:8px;background:transparent}
 .hamburger img{width:22px;height:22px}
-
-/* Mobile specific header behaviour */
-@media (max-width:767px){
-  .header-cta .btn-primary{display:none !important}
-  .header-cta{justify-content:flex-end}
-  .main-nav{display:none}
-  .hamburger{display:inline-flex}
-}
 
 /* ============================================================
    HERO
@@ -173,25 +170,6 @@ img{
 .doc-info .name{font:700 18.5px/1.2 var(--ff);color:#222;margin:0}
 .doc-info .qual{font:500 14.5px/1 var(--ff);color:#666;margin-top:4px}
 
-/* Desktop adjustments for doctor card */
-@media (min-width:768px){
-  .hero{flex-direction:row;justify-content:space-between;align-items:center;padding:110px 5% 140px;gap:90px;text-align:left}
-  .hero-content{max-width:520px}
-  .image-wrapper{width:50%;max-width:620px;height:auto;border-radius:24px;overflow:hidden;position:relative}
-  .hero-title{font-size:52px;margin:20px 0 26px;line-height:1.14}
-  .hero-desc{margin-bottom:42px}
-  .hero-cta{flex-direction:row;justify-content:flex-start;gap:30px;margin-bottom:48px}
-  .btn{padding:17px 38px;width:auto}
-  .info-box{flex-direction:row;gap:60px;padding:30px 40px;margin:0}
-  .divider{width:1px;height:74px;margin:0}
-  .doctor-card{left:38px;bottom:38px;transform:none;padding:18px 30px;gap:24px;box-shadow:var(--sh-3)}
-  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-  .num{display:none}
-  .num.desktop{display:block}
-  .doc-info .name{font-size:19px}
-  .doc-info .qual{font-size:15px}
-}
-
 /* ============================================================
    SECTION / TYPOGRAPHY
    ============================================================ */
@@ -214,9 +192,6 @@ img{
   gap:22px;
   margin-bottom:42px;
 }
-@media (max-width:1024px){
-  .about-images{grid-template-columns:repeat(3,1fr)}
-}
 .about-images img{
   width:100%;
   height:260px;
@@ -228,11 +203,6 @@ img{
   transform:scale(1.02);
 }
 
-@media(max-width:768px){
-  .about-images{grid-template-columns:repeat(2,1fr);gap:14px}
-  .about-images img{height:190px}
-}
-
 .stats-wrapper{display:flex;flex-wrap:wrap;gap:24px;margin-bottom:32px}
 .stat-box{flex:1;min-width:150px;padding:26px 30px;border-radius:16px;border:2px solid #cfe0ff;text-align:center;background:#f9fbff;transition:0.3s}
 .stat-box:hover{background:#eaf2ff}
@@ -240,7 +210,6 @@ img{
 .stat-box p{font-size:15px;font-weight:500;color:#555}
 
 .about-text{max-width:650px;font-size:17px;line-height:1.65;color:#444}
-@media (max-width:768px){.about-title{font-size:32px}}
 
 /* Icon cards */
 .icon-cards{display:flex;gap:12px;margin-top:18px}
@@ -254,9 +223,6 @@ img{
   grid-template-columns:360px 1fr;
   gap:28px;
   align-items:start;
-}
-@media (max-width:767px){
-  .treatments-grid{grid-template-columns:1fr}
 }
 .treatment-list{list-style:none;padding:0;margin:0 0 12px 0;border-radius:12px;overflow:hidden}
 .treatment-list li{padding:12px 14px;border-left:4px solid transparent;border-bottom:1px solid rgba(18,52,91,0.04);background:#fff}
@@ -312,12 +278,6 @@ img{
 
 @keyframes fadeSlide{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
-@media (max-width:600px){
-  .section-title{font-size:28px}
-  .testimonial-row{gap:20px}
-  .testimonial-card{min-width:260px;max-width:280px;padding:22px 20px}
-}
-
 /* ============================================================
    WHY GRID / DOCTOR BOX / BULLETS
    ============================================================ */
@@ -326,9 +286,6 @@ img{
   grid-template-columns:1fr 420px;
   gap:28px;
   align-items:center;
-}
-@media (max-width:767px){
-  .why-grid{grid-template-columns:1fr}
 }
 .why-left img{width:100%;border-radius:12px;box-shadow:var(--sh-2)}
 .bullets{list-style:disc;margin:14px 0;padding-left:20px;color:var(--clr-text-muted)}
@@ -339,9 +296,6 @@ img{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:12px;
-}
-@media (max-width:767px){
-  .faq-grid{grid-template-columns:1fr}
 }
 .faq-item{background:#fff;border-radius:10px;padding:12px;box-shadow:var(--sh-1)}
 .faq-item summary{cursor:pointer;font-weight:700}
@@ -356,9 +310,6 @@ img{
   grid-template-columns:1fr 1fr 360px;
   gap:20px;
   align-items:start;
-}
-@media (max-width:767px){
-  .footer-grid{grid-template-columns:1fr;gap:24px}
 }
 .site-bottom{display:flex;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(20,60,120,0.02);margin-top:18px;font-size:13px;color:var(--clr-text-muted)}
 .footer-right .map{width:100%;height:140px;object-fit:cover;border-radius:10px;box-shadow:var(--sh-2)}
@@ -379,52 +330,6 @@ img{
 .service-card:hover{transform:translateY(-6px);transition:all .25s ease;box-shadow:0 18px 40px rgba(12,60,120,0.08)}
 
 /* ============================================================
-   RESPONSIVE BREAKPOINTS SYSTEM
-   ============================================================ */
-/* Large Desktop 1440+ */
-@media (min-width:1440px){
-  :root{--max-w:1400px}
-}
-
-/* Desktop 1024 - 1439 */
-@media (min-width:1024px) and (max-width:1439px){
-  .hero-title{font-size:40px}
-}
-
-/* Tablet 768 - 1023 */
-@media (min-width:768px) and (max-width:1023px){
-  .container{padding:20px}
-  .why-grid{grid-template-columns:1fr;gap:22px}
-  .hero{padding:80px 24px}
-  .treatments-grid{grid-template-columns:1fr;gap:22px}
-}
-
-/* Mobile 480 - 767 */
-@media (min-width:480px) and (max-width:767px){
-  .container{padding:16px}
-  .hero-title{font-size:26px}
-  .hero-desc{font-size:15px}
-  .hero{min-height:420px}
-  .about-images{grid-template-columns:repeat(2,1fr)}
-  .treatments-grid{grid-template-columns:1fr}
-  .faq-grid{grid-template-columns:1fr}
-}
-
-/* Small mobile < 480 */
-@media (max-width:479px){
-  .container{padding:12px}
-  .brand-text{font-size:16px}
-  .brand-icon{width:30px;height:30px}
-  .main-nav{display:none}
-  .hamburger{display:inline-flex}
-  .hero-title{font-size:20px}
-  .testimonial-row{flex-direction:column;gap:12px}
-}
-
-/* small adjustments */
-.muted{color:var(--clr-text-muted)}
-
-/* ============================================================
    OPTIONAL: DARK MODE (toggle with .dark on <html> or <body>)
    ============================================================ */
 .dark{
@@ -436,5 +341,4 @@ img{
   --clr-text-muted: #9fb5c9;
   --clr-soft-blue: rgba(45,167,255,0.06);
 }
-
 
