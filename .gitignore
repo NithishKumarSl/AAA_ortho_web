@@ -1,0 +1,48 @@
+# Large image files (should be optimized before committing)
+# Original large images - these should be compressed before committing
+assets/images/*.jpg
+assets/images/*.JPG
+assets/images/*.jpeg
+assets/images/*.JPEG
+assets/images/*.png
+assets/images/*.PNG
+
+# Keep only optimized/compressed images
+!assets/images/optimized/
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build files
+dist/
+build/
+*.min.js
+*.min.css
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
