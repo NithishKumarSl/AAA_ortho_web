@@ -82,7 +82,7 @@ When components are loaded via `innerHTML`, the browser resolves relative URLs b
 To verify all paths work correctly:
 
 1. Start a local server from the project root
-2. Navigate to `http://localhost:8000/landing_page/landingpage.html`
+2. Navigate to `http://localhost:[portnumber]/landing_page/landingpage.html`
 3. Check browser console for any 404 errors
 4. Verify all images, icons, and styles load correctly
 
