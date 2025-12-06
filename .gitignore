@@ -1,14 +1,5 @@
-# Large image files (should be optimized before committing)
-# Original large images - these should be compressed before committing
-assets/images/*.jpg
-assets/images/*.JPG
-assets/images/*.jpeg
-assets/images/*.JPEG
-assets/images/*.png
-assets/images/*.PNG
-
-# Keep only optimized/compressed images
-!assets/images/optimized/
+# Large image files will be tracked with Git LFS
+# See .gitattributes for LFS configuration
 
 # Node modules
 node_modules/

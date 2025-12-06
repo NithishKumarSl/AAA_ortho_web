@@ -1,0 +1,16 @@
+# Git LFS configuration for large files
+# Track large image files with Git LFS
+# Images in assets/images/ directory
+assets/images/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+assets/images/**/*.JPG filter=lfs diff=lfs merge=lfs -text
+assets/images/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+assets/images/**/*.JPEG filter=lfs diff=lfs merge=lfs -text
+assets/images/**/*.png filter=lfs diff=lfs merge=lfs -text
+assets/images/**/*.PNG filter=lfs diff=lfs merge=lfs -text
+# Track any file larger than 100MB with LFS (fallback)
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.JPG filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.JPEG filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.PNG filter=lfs diff=lfs merge=lfs -text
